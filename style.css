@@ -1,3 +1,119 @@
 .hidden {
     display: none;
 }
+
+body {
+    margin: 0;
+}
+
+body * {
+    text-align: center;
+}
+
+div.container {
+    position: absolute;
+    position: fixed;
+    width: 700px;
+	top: 50%;
+	left: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+	transform: translate( -50%, -50% );
+}
+
+#clock {
+    margin: 20px;
+    font-size: 50pt;
+}
+
+#greeting {
+    margin: 20px;
+    font-size: 30pt;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#login-form input {
+    width: 250px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 20pt;
+}
+
+#todo-form input {
+    width: 330px;
+    height: 30px;
+    font-size: 15pt;
+}
+
+ul {
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 330px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+ul li {
+    height: fit-content;
+    vertical-align: middle;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul li span {
+    display: inline-block;
+    width: 90%;
+    height: 25px;
+    text-align: left;
+    font-size: 15pt;
+    color: ivory;
+    word-break: break-all;
+}
+
+ul li button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 25px;
+    font-size: 13pt;
+    color: greenyellow;
+    float: right;
+}
+
+ul li button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+div#quote span:first-child {
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+div#quote span:last-child {
+    font-style: italic;
+}
+
+div#weather {
+    position: absolute;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+img {
+    width: 100%;
+}
