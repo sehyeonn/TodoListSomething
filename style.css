@@ -120,14 +120,3 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
-@media (max-width: 1400px) {
-    div.container {
-        width: 400px;
-    }
-
-    img {
-        width: auto;
-        height: 100%;
-    }
-}
