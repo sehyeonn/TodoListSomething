@@ -5,7 +5,6 @@
 body {
     margin: 0;
 }
-
 body * {
     text-align: center;
 }
@@ -16,16 +15,21 @@ div.container {
     width: 700px;
 	top: 50%;
 	left: 50%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
 	transform: translate( -50%, -50% );
+}
+
+#today {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 50px;
 }
 
 #clock {
     margin: 20px;
-    font-size: 50pt;
+    margin-top: 0;
+    font-size: 25pt;
 }
 
 #greeting {
@@ -35,9 +39,20 @@ div.container {
 
 input {
     background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.5);
     border-top: none;
     border-left: none;
     border-right: none;
+}
+input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+input:focus {
+    outline: none;
+}
+input:hover, input:hover::placeholder {
+    color: palevioletred;
+    border-color: palevioletred;
 }
 
 #login-form input {
@@ -47,12 +62,12 @@ input {
     font-size: 20pt;
 }
 
+/* TodoList */
 #todo-form input {
     width: 330px;
     height: 30px;
     font-size: 15pt;
 }
-
 ul {
     list-style-type: none;
     background-color: rgba(0, 0, 0, 0.6);
@@ -63,7 +78,6 @@ ul {
     margin-right: auto;
     padding: 10px;
 }
-
 ul li {
     height: fit-content;
     vertical-align: middle;
@@ -71,7 +85,6 @@ ul li {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 ul li span {
     display: inline-block;
     width: 90%;
@@ -81,7 +94,6 @@ ul li span {
     color: ivory;
     word-break: break-all;
 }
-
 ul li button {
     border: none;
     border-radius: 5px;
@@ -91,11 +103,13 @@ ul li button {
     color: greenyellow;
     float: right;
 }
-
 ul li button:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+/* Todolist */
 
+
+/* quote */
 div#quote span:first-child {
     font-size: 13pt;
     font-weight: bold;
@@ -104,6 +118,7 @@ div#quote span:first-child {
 div#quote span:last-child {
     font-style: italic;
 }
+/* quote */
 
 div#weather {
     position: absolute;
@@ -114,6 +129,7 @@ div#weather {
     font-family: fantasy;
 }
 
+/* background image */
 img {
     width: 100%;
     display: block;
