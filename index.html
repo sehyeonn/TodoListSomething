@@ -10,32 +10,46 @@
 <body>
 
 <div class="container">
-    <h2 id="today"></h2>
-    <h2 id="clock">00:00:00</h1>
-    <form id="login-form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="What is your name?"/>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter." required/>
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-        <span></span><br>
-        <span></span>
+    <div id="main">
+        <h2 id="today"></h2>
+        <h2 id="clock">00:00:00</h1>
+        <form id="login-form" class="hidden">
+            <input required maxlength="15" type="text" placeholder="What is your name?"/>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter." required/>
+        </form>
+        <ul id="todo-list"></ul>
+        <div id="quote">
+            <span></span><br>
+            <span></span>
+        </div>
     </div>
-    <script src="scripts/greetings.js"></script>
-    <script src="scripts/clock.js"></script>
-    <script src="scripts/quotes.js"></script>
-    <script src="scripts/background.js"></script>
-    <script src="scripts/todo.js"></script>
-    <script src="scripts/weather.js"></script>
-</div>
 
+    <div id="menu">
+        <a href="https://www.google.com" class="link" id="google">
+            <img src="img/icon/icon_google.png"/></a>
+        <a href="https://www.youtube.com" class="link" id="youtube">
+            <img src="img/icon/icon_youtube.png"/></a>
+        <a href="https://www.github.com" class="link" id="github">
+            <img src="img/icon/icon_github.png"/></a>
+        <a href="https://www.twitter.com" class="link" id="twitter">
+            <img src="img/icon/icon_twitter.png"/></a>
+    </div>
+</div>
+                    
 <div id="weather">
     <span></span>
     <span></span>
 </div>
+
+<script src="scripts/greetings.js"></script>
+<script src="scripts/clock.js"></script>
+<script src="scripts/quotes.js"></script>
+<script src="scripts/background.js"></script>
+<script src="scripts/todo.js"></script>
+<script src="scripts/weather.js"></script>
 
 </body>
 </html>
